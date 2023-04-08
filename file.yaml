@@ -1,0 +1,8 @@
+--- 
+- name: Test 
+  hosts: localhost
+  task: 
+    - name: create a file 
+      file: 
+        path: /tmp/file.txt
+        state: touch
