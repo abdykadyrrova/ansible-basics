@@ -2,9 +2,11 @@
   hosts: localhost
   tasks:
     - name: Add line to file
-      lineinfile:
+      blockinfile:
         path: /tmp/file.txt
-        line: "This is line 1"
-        line: "This is the line 2"
-        insertafter: "^This is line 1$"
+        block: |
+          This is line 1
+          This is line 2
+      
      
+
