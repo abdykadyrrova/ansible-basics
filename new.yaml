@@ -1,0 +1,10 @@
+- name: Add lines
+  hosts: localhost
+  tasks:
+    - name: Add line to file
+      lineinfile:
+        path: /tmp/file.txt
+        line: "This is line 1"
+        line: "This is the line 2"
+        insertafter: "^This is line 1$"
+     
