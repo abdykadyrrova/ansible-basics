@@ -1,0 +1,9 @@
+---
+  - name: switch SELINUX to disabled
+    hosts: localhost
+    tasks:
+      - name: switch SELINUX to disabled
+        selinux:
+          state: disabled
+    vars:
+      ansible_python_interpreter: /usr/bin/python3
