@@ -1,0 +1,16 @@
+---
+  - name: add users
+    hosts: localhost 
+    tasks: 
+      - name: user bob
+        user:
+          name: bob
+          uid: 4400
+      - name: user anna  
+        user: 
+          name: anna
+          uid: 4500 
+      - name: user amy
+        user: 
+          name: amy
+          uid: 4600

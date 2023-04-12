@@ -1,0 +1,27 @@
+---
+  - name: 
+    hosts: localhost
+    tasks: 
+      - name: 
+        file:
+          state: touch
+          path: /root/test_config1
+          owner: root
+          group: root
+          mode: u=rw,g=rw,o=r
+      - name:
+        file:
+          state: touch
+          path: /root/test_config2
+          owner: root
+          group: root
+          mode: u=rw,g=rw,o=r
+      - name:
+        file:
+          state: touch
+          path: /root/test_config3
+          owner: root
+          group: root
+          mode: u=rw,g=rw,o=r
+    
+
