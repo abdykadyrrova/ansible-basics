@@ -1,0 +1,12 @@
+---
+  - name: 
+    hosts: all
+    gather_facts: yes
+    tasks: 
+      # - name: 
+        # command: cat /etc/os-release
+        # register: myoutput1
+      - name: print message
+        debug: 
+          var: ansible_distribution
+          # - "{{myoutput1}}"
