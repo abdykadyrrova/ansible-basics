@@ -5,5 +5,9 @@
       - name: switch SELINUX to disabled
         selinux:
           state: disabled
+  
+      - name: reboot the system
+        command: reboot
+     
     vars:
       ansible_python_interpreter: /usr/bin/python3
